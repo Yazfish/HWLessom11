@@ -1,4 +1,4 @@
-// Домашняя работа 11, Объекты и классы.
+// Домашняя работа 11-2, Методы объектов.
 // Кузьмин Сергей
 // Java-разработчик IND 36.0
 //
@@ -12,11 +12,14 @@ public class Main {
         Book palata6 = new Book(fDostoevsky, "Палата №6", 1870);
 
 
-        System.out.printf(buratino.getBookTitle() + " " + buratino.getYearOfPublication() + "\n");
-        System.out.println(palata6.getBookTitle() + " " + palata6.getYearOfPublication());
+        System.out.println(buratino);
+        System.out.println(palata6);
 
         palata6.setYearOfPublication(1980);
-        System.out.println(palata6.getBookTitle() + " " + palata6.getYearOfPublication());
+        System.out.println(palata6);
+
+        System.out.println("\n___________________ \n" + buratino.equals(palata6));
+        System.out.println(palata6.hashCode());
 
 
     }
